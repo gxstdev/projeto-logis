@@ -21,7 +21,7 @@ public class VeiculoBean implements VeiculoService{
 		try {
 			conn = DB.getConnection();
 			
-			ps = conn.prepareStatement(QueryUtil.insert());
+			ps = conn.prepareStatement(QueryUtil.insertVeiculo());
 			
 			ps.setInt(1, veiculo.getId());
 			ps.setInt(2, veiculo.getProprietario().getId());
